@@ -1,4 +1,9 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<style>body{margin:0}</style>
 <title>이재현 휴대폰</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap">
@@ -19,6 +24,7 @@
   --font:"Noto Sans KR","Malgun Gothic",-apple-system,sans-serif;
   color-scheme:dark;
 }
+[hidden]{display:none!important}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{height:100%}
 body{background:var(--void);color:var(--fg);font-family:var(--font);margin:0;overflow:hidden;
@@ -396,6 +402,8 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 
+</head>
+<body>
 <div class="phone" id="phone">
   <div class="status">
     <span class="l"><span id="sbTime">22:14</span>
@@ -566,8 +574,6 @@ const PHONE = {
       { d: -89, t: "13:05", me: true, text: "몰라" },
       { d: -89, t: "13:06", text: "또 그 새끼지." },
       { d: -89, t: "13:06", text: "형 그 사람 만나지 마." },
-      { d: -89, t: "13:40", me: true, text: "너땜에 만나는거야" },
-      { d: -89, t: "13:41", text: "무슨 소리야 그게." },
       { d: -72, t: "03:40", text: "형 방에 담배 두고 갔어." },
       { d: -72, t: "11:10", me: true, text: "가져와" },
       { d: -72, t: "11:12", text: "내일." },
@@ -1161,7 +1167,7 @@ const PHONE = {
       { pickup: 4, end: 14.5, lines: [[0.8, "형? 와 진짜 폰 켰네"], [3.6, "지금 어디야 다들 형 찾느라 난리야"], [7.2, "...형 괜찮은 거지?"], [10, "아 나 테이블 들어가야 돼"], [12.2, "주노형한테 먼저 연락해 응?"]] }
     ],
     "개새끼": [
-      { when: "gaeTold", tease: true, pickup: 2, end: 12, lines: [[0.8, "또 너냐"], [3, "왜 니네 에이스가 많이 화났나봐?"], [6.4, "문 앞에서 개처럼 기다리던데"], [9.6, "잘 달래봐라 크크"]] },
+      { when: "gaeTold", tease: true, pickup: 2, end: 9, lines: [[0.8, "또 너냐"], [3, "왜 니네 에이스가 많이 화났나봐?"], [6.4, "잘 달래봐"]] },
       { when: "gaeTold", nth: 1, pickup: 3, end: 13, lines: [[1, "어 재현아"], [3.4, "니네 에이스 방금 나한테 전화했더라"], [7, "몇 호냐고 묻길래 알려줬다"], [10.4, "둘이 잘 해봐라 다음 주에 보자"]] },
       { pickup: 6, end: 12, lines: [[1, "어 재현아"], [3.4, "폰 꺼놓고 잘 쉬었냐"], [6.6, "니네 에이스가 너 찾는다고 아주 난리던데"], [10, "다음 주에 보자"]] }
     ],
@@ -2085,4 +2091,5 @@ buildLock(); buildHome();
 })();
 </script>
 
-</body></html>
+</body>
+</html>
